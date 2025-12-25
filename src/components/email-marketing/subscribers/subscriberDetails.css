@@ -1,0 +1,75 @@
+.subscriber-details-root {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* PROFILE */
+.subscriber-profile h2 {
+  margin-bottom: 6px;
+}
+
+/* STATS */
+.subscriber-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+}
+
+.stat-card strong {
+  font-size: 26px;
+  color: #d4af37;
+}
+
+/* ACTIONS */
+.subscriber-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* NOTES */
+textarea {
+  width: 100%;
+  min-height: 120px;
+  background: rgba(255,255,255,0.08);
+  border: none;
+  border-radius: 12px;
+  padding: 12px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+/* TIMELINE */
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.timeline-item {
+  padding: 10px;
+  border-left: 3px solid #d4af37;
+  background: rgba(255,255,255,0.05);
+  border-radius: 8px;
+}
+
+/* MOBILE PORTRAIT */
+@media (max-width: 600px) {
+  .subscriber-stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* TABLET */
+@media (max-width: 900px) {
+  .subscriber-stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* DESKTOP LARGE */
+@media (min-width: 1400px) {
+  .subscriber-stats-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

@@ -1,0 +1,37 @@
+.campaign-create-root {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.campaign-create-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.preview-card .email-preview {
+  width: 600px;
+  background: #fff;
+  color: #000;
+  padding: 16px;
+  border-radius: 12px;
+}
+
+.campaign-create-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+/* MOBILE */
+@media(max-width:900px){
+  .campaign-create-grid{
+    grid-template-columns:1fr;
+  }
+
+  .preview-card .email-preview{
+    width:100%;
+  }
+}
+/* end of file */

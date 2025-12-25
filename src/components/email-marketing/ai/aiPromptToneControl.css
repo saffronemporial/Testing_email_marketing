@@ -1,0 +1,45 @@
+.ai-tone-root {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* HEADER */
+.ai-tone-header {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+/* GRID */
+.tone-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+}
+
+/* SLIDER */
+.tone-slider input[type="range"] {
+  width: 100%;
+}
+
+/* FOOTER */
+.ai-tone-footer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  .tone-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* TABLET */
+@media (max-width: 900px) {
+  .tone-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+/* end of file */

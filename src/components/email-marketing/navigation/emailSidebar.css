@@ -1,0 +1,87 @@
+/* =========================================================
+   EMAIL SIDEBAR — GOLD PREMIUM NAVIGATION
+   ========================================================= */
+
+.em-sidebar-wrap {
+  display: flex;
+  flex-direction: column;
+  padding: 16px 12px;
+}
+
+.em-sidebar-wrap.collapsed .em-nav-label,
+.em-sidebar-wrap.collapsed .em-nav-section-title {
+  display: none;
+}
+
+/* ---------------- SECTIONS ---------------- */
+.em-nav-section {
+  margin-bottom: 18px;
+}
+
+.em-nav-section-title {
+  font-size: 11px;
+  letter-spacing: 1px;
+  color: #9ca3af;
+  margin-bottom: 8px;
+  padding-left: 12px;
+}
+
+/* ---------------- LINKS ---------------- */
+.em-nav-link {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 10px 14px;
+  border-radius: 10px;
+  color: #cbd5e1;
+  text-decoration: none;
+  margin-bottom: 6px;
+  transition: all 0.25s ease;
+}
+
+.em-nav-link:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.em-nav-link.active {
+  background: linear-gradient(
+    90deg,
+    rgba(212, 175, 55, 0.25),
+    rgba(212, 175, 55, 0.05)
+  );
+  color: #d4af37;
+}
+
+.em-nav-active-bar {
+  width: 4px;
+  height: 100%;
+  background: #d4af37;
+  border-radius: 4px;
+  margin-right: 10px;
+  opacity: 0;
+}
+
+.em-nav-link.active .em-nav-active-bar {
+  opacity: 1;
+}
+
+/* ---------------- BADGE ---------------- */
+.em-nav-badge {
+  margin-left: auto;
+  background: rgba(212, 175, 55, 0.25);
+  color: #d4af37;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 999px;
+}
+
+/* ---------------- ALERT ---------------- */
+.em-sidebar-alert {
+  margin-top: auto;
+  background: rgba(239, 68, 68, 0.15);
+  color: #fca5a5;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 12px;
+}

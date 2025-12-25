@@ -1,0 +1,190 @@
+/* Public shipment / RFQ timeline */
+
+.st-section {
+  padding: 4rem 1rem;
+  background: radial-gradient(circle at top left, #020617 0%, #020617 45%, #0b1120 100%);
+  color: #e5e7eb;
+}
+
+.st-inner {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.st-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 1.75rem;
+}
+
+.st-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+
+.st-sub {
+  font-size: 0.92rem;
+  color: #9ca3af;
+}
+
+.st-toggle {
+  display: inline-flex;
+  background: rgba(15,23,42,0.9);
+  border-radius: 9999px;
+  padding: 3px;
+  border: 1px solid rgba(148,163,184,0.5);
+}
+
+.st-toggle-btn {
+  border: none;
+  background: transparent;
+  color: #9ca3af;
+  padding: 0.4rem 0.9rem;
+  font-size: 0.82rem;
+  border-radius: 9999px;
+  cursor: pointer;
+}
+
+.st-toggle-btn.active {
+  background: linear-gradient(120deg, #f97316, #facc15);
+  color: #111827;
+  font-weight: 600;
+}
+
+.st-error {
+  margin-bottom: 0.75rem;
+  padding: 0.6rem 0.9rem;
+  border-radius: 0.75rem;
+  background: rgba(239,68,68,0.12);
+  border: 1px solid rgba(239,68,68,0.4);
+  font-size: 0.8rem;
+  color: #fecaca;
+}
+
+.st-timeline-wrapper {
+  border-radius: 20px;
+  background: linear-gradient(145deg, rgba(15,23,42,0.98), rgba(10,10,17,0.98));
+  border: 1px solid rgba(148,163,184,0.35);
+  padding: 1.5rem;
+  box-shadow: 0 24px 60px rgba(15,23,42,0.7);
+  min-height: 220px;
+}
+
+.st-loading,
+.st-empty {
+  text-align: center;
+  color: #9ca3af;
+  font-size: 0.9rem;
+}
+
+.st-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.st-item {
+  display: flex;
+  gap: 1rem;
+}
+
+.st-marker-col {
+  position: relative;
+  width: 24px;
+  display: flex;
+  justify-content: center;
+}
+
+.st-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 9999px;
+  background: radial-gradient(circle, #22c55e, #16a34a);
+  box-shadow: 0 0 12px rgba(34,197,94,0.7);
+  margin-top: 6px;
+}
+
+.st-dot.simulated {
+  background: radial-gradient(circle, #f97316, #ea580c);
+  box-shadow: 0 0 12px rgba(249,115,22,0.7);
+}
+
+.st-line {
+  position: absolute;
+  top: 18px;
+  bottom: -18px;
+  width: 2px;
+  background: linear-gradient(to bottom, rgba(75,85,99,0.9), rgba(31,41,55,0.2));
+}
+
+.st-card {
+  flex: 1;
+  border-radius: 16px;
+  background: radial-gradient(circle at top left, rgba(15,23,42,0.95), rgba(6,8,15,0.98));
+  border: 1px solid rgba(55,65,81,0.7);
+  padding: 0.85rem 1rem;
+}
+
+.st-card-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 0.4rem;
+}
+
+.st-chip {
+  font-size: 0.7rem;
+  padding: 0.2rem 0.55rem;
+  border-radius: 9999px;
+  border: 1px solid rgba(148,163,184,0.8);
+  text-transform: uppercase;
+  letter-spacing: 0.11em;
+  color: #e5e7eb;
+}
+
+.st-ref {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #fef9c3;
+}
+
+.st-card-body {
+  font-size: 0.82rem;
+  color: #9ca3af;
+}
+
+.st-meta-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.25rem;
+}
+
+.st-label {
+  color: #6b7280;
+}
+
+.st-value {
+  color: #e5e7eb;
+}
+
+.st-footer-note {
+  margin-top: 1rem;
+  font-size: 0.78rem;
+  color: #9ca3af;
+}
+
+.st-footer-note code {
+  background: rgba(15,23,42,0.8);
+  padding: 0.1rem 0.35rem;
+  border-radius: 0.35rem;
+}
+
+@media (max-width: 768px) {
+  .st-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

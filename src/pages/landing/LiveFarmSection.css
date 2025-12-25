@@ -1,0 +1,243 @@
+/* src/components/Landing/LiveFarmSection.css */
+
+.lf-wrapper {
+  padding: 3.2rem 1.25rem 3.5rem;
+  background: radial-gradient(circle at top, #0b1120 0, #020617 70%);
+}
+
+.lf-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.lf-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+  align-items: center;
+  margin-bottom: 1.75rem;
+}
+
+.lf-header h2 {
+  font-size: 2rem;
+}
+
+.lf-header p {
+  color: #9ca3af;
+  margin-top: 0.25rem;
+}
+
+.lf-pill {
+  padding: 0.35rem 0.8rem;
+  border-radius: 999px;
+  border: 1px solid rgba(148, 163, 184, 0.6);
+  font-size: 0.8rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: #e5e7eb;
+}
+
+.lf-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 999px;
+  background: #22c55e;
+  box-shadow: 0 0 12px rgba(34, 197, 94, 0.9);
+}
+
+/* Grid */
+
+.lf-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 2.3fr) minmax(0, 1.4fr);
+  gap: 1.5rem;
+}
+
+.lf-main {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.lf-main-video {
+  border-radius: 22px;
+  border: 1px solid rgba(55, 65, 81, 0.9);
+  background: radial-gradient(circle at top left, #111827, #020617);
+  overflow: hidden;
+}
+
+.lf-video-header {
+  display: flex;
+  gap: 0.5rem;
+  align-items: baseline;
+  padding: 0.7rem 0.8rem;
+  border-bottom: 1px solid rgba(31, 41, 55, 0.9);
+}
+
+.lf-live-pill {
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  background: #ef4444;
+  color: #f9fafb;
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+}
+
+.lf-video-title {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.lf-video-meta {
+  margin-left: auto;
+  font-size: 0.75rem;
+  color: #9ca3af;
+}
+
+.lf-video-placeholder {
+  position: relative;
+  height: 230px;
+  overflow: hidden;
+}
+
+.lf-video-gradient {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at center, #16a34a, #0f172a 60%);
+  opacity: 0.9;
+}
+
+.lf-video-overlay {
+  position: absolute;
+  inset: 0;
+  padding: 0.75rem 0.85rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.lf-video-tag {
+  align-self: flex-start;
+  padding: 0.2rem 0.55rem;
+  border-radius: 999px;
+  background: rgba(15, 23, 42, 0.8);
+  font-size: 0.72rem;
+}
+
+.lf-video-center {
+  align-self: center;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+
+.lf-play-ring {
+  position: absolute;
+  inset: 0;
+  border-radius: 999px;
+  border: 2px solid rgba(249, 250, 251, 0.7);
+  box-shadow: 0 0 22px rgba(34, 197, 94, 0.7);
+}
+
+.lf-play-icon {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+}
+
+.lf-video-footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.75rem;
+}
+
+.lf-metrics {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.7rem;
+}
+
+.lf-metric {
+  border-radius: 0.9rem;
+  padding: 0.7rem 0.8rem;
+  background: rgba(15, 23, 42, 0.92);
+  border: 1px solid rgba(31, 41, 55, 0.9);
+}
+
+.lf-label {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #9ca3af;
+}
+
+.lf-value {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+/* Side panel */
+
+.lf-side {
+  border-radius: 18px;
+  padding: 1rem;
+  background: radial-gradient(circle at top right, #172554, #020617);
+  border: 1px solid rgba(59, 130, 246, 0.6);
+}
+
+.lf-side-title {
+  font-size: 0.95rem;
+  margin-bottom: 0.7rem;
+}
+
+.lf-slots {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.6rem;
+  margin-bottom: 0.7rem;
+}
+
+.lf-slots li {
+  padding: 0.55rem 0.6rem;
+  border-radius: 0.7rem;
+  background: rgba(15, 23, 42, 0.9);
+  border: 1px solid rgba(30, 64, 175, 0.8);
+}
+
+.lf-slot-time {
+  font-size: 0.75rem;
+  color: #93c5fd;
+}
+
+.lf-slot-title {
+  display: block;
+  font-size: 0.88rem;
+}
+
+.lf-slot-meta {
+  font-size: 0.75rem;
+  color: #9ca3af;
+}
+
+.lf-note {
+  font-size: 0.8rem;
+  color: #d1d5db;
+}
+
+/* Responsive */
+
+@media (max-width: 960px) {
+  .lf-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .lf-side {
+    order: -1;
+  }
+}

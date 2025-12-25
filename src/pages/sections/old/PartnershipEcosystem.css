@@ -1,0 +1,78 @@
+/* components/LandingPage/sections/PartnershipEcosystem.css */
+.partnership-ecosystem {
+  background: linear-gradient(135deg, #0a0a0f 0%, #1a1a2e 100%);
+  position: relative;
+}
+
+.api-pulse {
+  animation: apiPulse 2s ease-in-out infinite;
+  box-shadow: 0 0 30px rgba(16, 185, 129, 0.4);
+}
+
+@keyframes apiPulse {
+  0%, 100% { 
+    transform: scale(1);
+    box-shadow: 0 0 20px rgba(16, 185, 129, 0.4);
+  }
+  50% { 
+    transform: scale(1.05);
+    box-shadow: 0 0 40px rgba(16, 185, 129, 0.8), 0 0 60px rgba(16, 185, 129, 0.3);
+  }
+}
+
+.api-endpoint {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(16, 185, 129, 0.3);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.api-endpoint::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(180deg, #10b981, #059669);
+  transform: scaleY(0);
+  transition: transform 0.3s ease;
+}
+
+.api-endpoint:hover::before {
+  transform: scaleY(1);
+}
+
+.api-endpoint:hover {
+  transform: translateX(10px);
+  border-color: rgba(16, 185, 129, 0.6);
+}
+
+.solution-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(6, 182, 212, 0.3);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.solution-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(6, 182, 212, 0.6);
+  box-shadow: 0 10px 30px rgba(6, 182, 212, 0.3);
+}
+
+/* Network connection lines */
+.partnership-ecosystem::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(circle at 30% 40%, rgba(16, 185, 129, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 70% 60%, rgba(6, 182, 212, 0.1) 0%, transparent 50%);
+  pointer-events: none;
+}

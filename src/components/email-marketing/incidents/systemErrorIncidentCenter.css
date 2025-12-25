@@ -1,0 +1,81 @@
+.incident-root {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* HEADER */
+.incident-header {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+/* FILTERS */
+.incident-filters {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* LIST */
+.incident-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* CARD */
+.incident-card {
+  cursor: pointer;
+  transition: transform 0.15s ease;
+}
+
+.incident-card:hover {
+  transform: translateY(-2px);
+}
+
+.incident-card.info {
+  border-left: 4px solid #3b82f6;
+}
+
+.incident-card.warning {
+  border-left: 4px solid #fbbf24;
+}
+
+.incident-card.critical {
+  border-left: 4px solid #ef4444;
+}
+
+/* HEADER */
+.incident-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* DETAILS */
+.incident-details {
+  margin-top: 10px;
+}
+
+.incident-details pre {
+  background: rgba(0,0,0,0.4);
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 12px;
+  overflow-x: auto;
+}
+
+/* ACTIONS */
+.incident-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  .incident-actions {
+    flex-direction: column;
+  }
+}

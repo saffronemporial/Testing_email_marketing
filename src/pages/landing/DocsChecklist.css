@@ -1,0 +1,187 @@
+.dc-section {
+  padding: 4rem 1rem 4.25rem;
+  background: linear-gradient(180deg, #fefce8 0%, #ffffff 40%, #f9fafb 100%);
+  border-top: 1px solid rgba(229, 231, 235, 0.9);
+}
+
+.dc-inner {
+  max-width: 1120px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: minmax(0, 1.3fr) minmax(0, 1.1fr);
+  gap: 2.4rem;
+  align-items: flex-start;
+}
+
+.dc-kicker {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  font-weight: 600;
+  color: #92400e;
+  margin-bottom: 0.4rem;
+}
+
+.dc-title {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 0.6rem;
+  background: linear-gradient(115deg, #b45309, #f97316, #16a34a);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.dc-subtitle {
+  font-size: 0.95rem;
+  color: #4b5563;
+  max-width: 540px;
+  margin-bottom: 1.2rem;
+}
+
+.dc-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.dc-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.4rem;
+  font-size: 0.9rem;
+  color: #374151;
+}
+
+.dc-list li::before {
+  content: '✓';
+  color: #16a34a;
+  font-weight: 700;
+  margin-top: 0.1rem;
+}
+
+/* Right side card */
+
+.dc-right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.dc-card {
+  width: 100%;
+  max-width: 420px;
+  background: #020617;
+  border-radius: 1.4rem;
+  padding: 1.1rem 1.1rem 1.2rem;
+  color: #e5e7eb;
+  border: 1px solid rgba(55, 65, 81, 0.85);
+  box-shadow: 0 22px 52px rgba(15, 23, 42, 0.95);
+}
+
+.dc-card-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.9rem;
+  margin-bottom: 0.9rem;
+  align-items: flex-start;
+}
+
+.dc-card-title {
+  font-size: 0.98rem;
+  font-weight: 700;
+}
+
+.dc-card-sub {
+  font-size: 0.8rem;
+  color: #9ca3af;
+}
+
+.dc-pill {
+  font-size: 0.7rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  border: 1px solid rgba(251, 191, 36, 0.9);
+  background: rgba(23, 37, 84, 0.8);
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+}
+
+.dc-doc-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 0.6rem;
+  margin-bottom: 0.6rem;
+}
+
+.dc-doc-card {
+  display: flex;
+  gap: 0.6rem;
+  align-items: center;
+  padding: 0.6rem 0.7rem;
+  background: rgba(15, 23, 42, 0.9);
+  border-radius: 0.9rem;
+  border: 1px solid rgba(30, 64, 175, 0.8);
+  text-decoration: none;
+  color: inherit;
+  transition: background 0.18s ease, transform 0.18s ease, border-color 0.18s ease;
+}
+
+.dc-doc-card:hover {
+  background: radial-gradient(circle at top, rgba(37, 99, 235, 0.4), #020617);
+  border-color: rgba(129, 140, 248, 0.9);
+  transform: translateY(-2px);
+}
+
+.dc-doc-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 0.8rem;
+  background: rgba(15, 23, 42, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+}
+
+.dc-doc-body {
+  flex: 1;
+}
+
+.dc-doc-label {
+  font-size: 0.86rem;
+  font-weight: 600;
+}
+
+.dc-doc-meta {
+  font-size: 0.78rem;
+  color: #9ca3af;
+}
+
+.dc-footnote {
+  font-size: 0.72rem;
+  color: #9ca3af;
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
+  .dc-inner {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .dc-right {
+    justify-content: flex-start;
+  }
+
+  .dc-card {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 640px) {
+  .dc-section {
+    padding: 3rem 1rem 3.25rem;
+  }
+}

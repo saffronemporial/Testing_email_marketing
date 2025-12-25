@@ -1,0 +1,39 @@
+/* =========================================================
+   EMAIL MARKETING ROUTE LOADER (PREMIUM)
+   ========================================================= */
+
+.em-route-loader {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.em-loader-card {
+  height: 140px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.08);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Shimmer animation */
+.shimmer::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(212, 175, 55, 0.25),
+    transparent
+  );
+  transform: translateX(-100%);
+  animation: shimmerMove 1.4s infinite;
+}
+
+@keyframes shimmerMove {
+  to {
+    transform: translateX(100%);
+  }
+}

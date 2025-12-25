@@ -1,0 +1,114 @@
+/* Live stats strip – gold / saffron theme */
+
+.ls-strip {
+  background: radial-gradient(circle at top, #111827 0%, #020617 55%, #000 100%);
+  border-bottom: 1px solid rgba(148, 163, 184, 0.35);
+  color: #e5e7eb;
+}
+
+.ls-inner {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0.85rem 1rem 1.25rem;
+}
+
+.ls-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.35rem 0.9rem;
+  border-radius: 9999px;
+  background: linear-gradient(120deg, rgba(244, 165, 96, 0.15), rgba(212, 175, 55, 0.2));
+  border: 1px solid rgba(250, 204, 21, 0.6);
+  margin-bottom: 0.75rem;
+}
+
+.ls-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 9999px;
+  background: #22c55e;
+  box-shadow: 0 0 10px rgba(34, 197, 94, 0.8);
+}
+
+.ls-pill-text {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: #f9fafb;
+}
+
+.ls-error {
+  display: inline-block;
+  margin-left: 0.75rem;
+  font-size: 0.78rem;
+  color: #fecaca;
+}
+
+.ls-grid {
+  margin-top: 0.4rem;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+
+.ls-card {
+  border-radius: 16px;
+  padding: 0.75rem 0.9rem;
+  background: radial-gradient(circle at top left, rgba(15, 23, 42, 0.98), rgba(6, 6, 12, 0.96));
+  border: 1px solid rgba(148, 163, 184, 0.4);
+  box-shadow: 0 8px 22px rgba(15, 23, 42, 0.7);
+}
+
+.ls-label {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.13em;
+  color: #e5e7eb;
+  opacity: 0.85;
+}
+
+.ls-value {
+  margin-top: 0.25rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  background: linear-gradient(120deg, #fbbf24, #f97316);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.ls-caption {
+  margin-top: 0.25rem;
+  font-size: 0.78rem;
+  color: #9ca3af;
+}
+
+/* subtle pulsing for numbers */
+.ls-animate {
+  animation: lsPulse 2.4s ease-in-out infinite;
+}
+
+@keyframes lsPulse {
+  0%, 100% {
+    transform: translateY(0);
+    text-shadow: 0 0 0 rgba(250, 204, 21, 0.0);
+  }
+  50% {
+    transform: translateY(-1px);
+    text-shadow: 0 0 10px rgba(250, 204, 21, 0.4);
+  }
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .ls-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .ls-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

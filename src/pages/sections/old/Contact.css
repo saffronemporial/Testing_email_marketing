@@ -1,0 +1,276 @@
+/* components/LandingPage/sections/Contact.css */
+.contact {
+  background: linear-gradient(135deg, #0a0a0f 0%, #1a1a2e 50%, #0f0f1a 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.trust-gradient {
+  background: linear-gradient(135deg, #D4AF37 0%, #1a1a2e 50%, #0a0a0f 100%);
+}
+
+.contact-method {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  padding: 20px;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.contact-method:hover {
+  transform: translateX(10px);
+  border-color: rgba(212, 175, 55, 0.6);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.contact-icon {
+  background: linear-gradient(135deg, #D4AF37, #FFD700);
+  box-shadow: 0 0 20px rgba(212, 175, 55, 0.4);
+  transition: all 0.3s ease;
+}
+
+.contact-method:hover .contact-icon {
+  transform: scale(1.1) rotate(10deg);
+  box-shadow: 0 0 30px rgba(212, 175, 55, 0.8);
+}
+
+.contact-form-container {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  transition: all 0.3s ease;
+}
+
+.contact-form-container:hover {
+  border-color: rgba(212, 175, 55, 0.6);
+  box-shadow: 0 20px 40px rgba(212, 175, 55, 0.2);
+}
+
+.contact-input {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.contact-input:focus {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(212, 175, 55, 0.6);
+  box-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
+  outline: none;
+}
+
+.contact-submit-btn {
+  background: linear-gradient(135deg, #D4AF37 0%, #FFD700 100%);
+  border: none;
+  color: #0a0a0f;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.contact-submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 15px 30px rgba(212, 175, 55, 0.4);
+}
+
+/* components/LandingPage/sections/Contact.css */
+.contact {
+  background: linear-gradient(135deg, #0a0a0f 0%, #1a1a2e 50%, #0f0f1a 100%);
+  position: relative;
+  overflow: hidden;
+  color: #ffffff !important;
+}
+
+.contact * {
+  color: #ffffff !important;
+}
+
+.trust-gradient {
+  background: linear-gradient(135deg, #D4AF37 0%, #1a1a2e 50%, #0a0a0f 100%);
+}
+
+.contact-method {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  padding: 20px;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  color: #ffffff !important;
+}
+
+.contact-method * {
+  color: #ffffff !important;
+}
+
+.contact-method:hover {
+  transform: translateX(10px);
+  border-color: rgba(212, 175, 55, 0.6);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.contact-icon {
+  background: linear-gradient(135deg, #D4AF37, #FFD700);
+  box-shadow: 0 0 20px rgba(212, 175, 55, 0.4);
+  transition: all 0.3s ease;
+}
+
+.contact-method:hover .contact-icon {
+  transform: scale(1.1) rotate(10deg);
+  box-shadow: 0 0 30px rgba(212, 175, 55, 0.8);
+}
+
+.contact-form-container {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  transition: all 0.3s ease;
+  color: #ffffff !important;
+}
+
+.contact-form-container * {
+  color: #ffffff !important;
+}
+
+.contact-form-container:hover {
+  border-color: rgba(212, 175, 55, 0.6);
+  box-shadow: 0 20px 40px rgba(212, 175, 55, 0.2);
+}
+
+/* FIXED: Contact Input Styles */
+.contact-input {
+  background: rgba(255, 255, 255, 0.1) !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  backdrop-filter: blur(10px);
+  color: #ffffff !important;
+  transition: all 0.3s ease;
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.contact-input::placeholder {
+  color: rgba(255, 255, 255, 0.6) !important;
+}
+
+.contact-input:focus {
+  background: rgba(255, 255, 255, 0.15) !important;
+  border-color: rgba(212, 175, 55, 0.6) !important;
+  box-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
+  outline: none;
+  color: #ffffff !important;
+}
+
+/* FIXED: Dropdown/Select Styles */
+.contact-input select {
+  background: rgba(255, 255, 255, 0.1) !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  color: #ffffff !important;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white'%3e%3cpath d='M7 10l5 5 5-5z'/%3e%3c/svg%3e") !important;
+  background-repeat: no-repeat !important;
+  background-position: right 12px center !important;
+  background-size: 16px !important;
+  padding-right: 40px !important;
+}
+
+.contact-input select option {
+  background: #1a1a2e !important;
+  color: #ffffff !important;
+  padding: 12px !important;
+  border: none !important;
+}
+
+.contact-input select:focus {
+  background: rgba(255, 255, 255, 0.15) !important;
+  border-color: rgba(212, 175, 55, 0.6) !important;
+  color: #ffffff !important;
+}
+
+/* Textarea specific styles */
+.contact-input textarea {
+  background: rgba(255, 255, 255, 0.1) !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  color: #ffffff !important;
+  resize: vertical;
+  min-height: 120px;
+}
+
+.contact-input textarea::placeholder {
+  color: rgba(255, 255, 255, 0.6) !important;
+}
+
+.contact-input textarea:focus {
+  background: rgba(255, 255, 255, 0.15) !important;
+  border-color: rgba(212, 175, 55, 0.6) !important;
+  color: #ffffff !important;
+}
+
+.contact-submit-btn {
+  background: linear-gradient(135deg, #D4AF37 0%, #FFD700 100%) !important;
+  border: none !important;
+  color: #0a0a0f !important; /* Dark text on gold button */
+  font-weight: 600 !important;
+  transition: all 0.3s ease;
+  padding: 15px 30px !important;
+  border-radius: 8px !important;
+  font-size: 1.1rem !important;
+  cursor: pointer !important;
+  width: 100% !important;
+}
+
+.contact-submit-btn:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 15px 30px rgba(212, 175, 55, 0.4) !important;
+  color: #0a0a0f !important; /* Keep dark text on hover */
+}
+
+/* Labels */
+.contact label {
+  color: #ffffff !important;
+  font-weight: 600 !important;
+  margin-bottom: 8px !important;
+  display: block !important;
+}
+
+/* Trust indicators in contact */
+.contact .bg-white {
+  background: rgba(255, 255, 255, 0.1) !important;
+}
+
+.contact .bg-white * {
+  color: #ffffff !important;
+}
+
+.contact .text-2xl {
+  color: #D4AF37 !important; /* Gold for numbers */
+}
+
+.contact .text-sm {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+/* CTA Section */
+.contact .bg-white.bg-opacity-10 {
+  background: rgba(255, 255, 255, 0.1) !important;
+}
+
+.contact .bg-white.bg-opacity-10 * {
+  color: #ffffff !important;
+}
+
+/* Links */
+.contact a {
+  color: #D4AF37 !important;
+  text-decoration: none !important;
+}
+
+.contact a:hover {
+  color: #FFD700 !important;
+  text-decoration: underline !important;
+}

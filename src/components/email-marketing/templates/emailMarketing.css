@@ -1,0 +1,42 @@
+/* =========================================================
+   TEMPLATE EDITOR — GOLD PREMIUM
+   ========================================================= */
+
+.template-editor-wrap {
+  margin-top: 12px;
+}
+
+.template-editor-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.template-editor-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 18px;
+}
+
+.template-editor-grid label {
+  display: block;
+  font-size: 12px;
+  margin-top: 10px;
+  margin-bottom: 4px;
+}
+
+.template-editor-grid input,
+.template-editor-grid select,
+.template-editor-grid textarea {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.08);
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.template-editor-grid textarea {
+  font-family: monospace;
+}

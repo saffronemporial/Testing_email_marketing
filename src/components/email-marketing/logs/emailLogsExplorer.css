@@ -1,0 +1,82 @@
+.email-logs-root {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* HEADER */
+.email-logs-header {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+/* FILTERS */
+.email-logs-filters {
+  display: flex;
+  gap: 12px;
+}
+
+.email-logs-filters input,
+.email-logs-filters select {
+  background: rgba(255,255,255,0.08);
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  color: #fff;
+}
+
+/* TABLE */
+.email-logs-table-wrap {
+  overflow-x: auto;
+}
+
+.log-row {
+  cursor: pointer;
+}
+
+.log-row:hover {
+  background: rgba(255,255,255,0.05);
+}
+
+/* DETAILS */
+.log-details {
+  margin-top: 14px;
+}
+
+.provider-response {
+  background: rgba(0,0,0,0.4);
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 12px;
+  overflow-x: auto;
+}
+
+/* PAGINATION */
+.email-logs-pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* MOBILE PORTRAIT */
+@media (max-width: 600px) {
+  .email-logs-filters {
+    flex-direction: column;
+  }
+}
+
+/* TABLET / MOBILE LANDSCAPE */
+@media (max-width: 900px) {
+  .email-logs-table-wrap {
+    font-size: 13px;
+  }
+}
+
+/* LARGE DESKTOP */
+@media (min-width: 1400px) {
+  .email-logs-table-wrap {
+    max-width: 1200px;
+  }
+}
+/* end of file */

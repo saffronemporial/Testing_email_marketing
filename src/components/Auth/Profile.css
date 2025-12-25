@@ -1,0 +1,289 @@
+/* src/components/Auth/Profile.css */
+/* Gold-themed futuristic single-page styles (no :root) */
+
+* { box-sizing: border-box; }
+
+.profile-container {
+  max-width: 1000px;
+  margin: 32px auto;
+  padding: 0 16px;
+  color: #055502;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+  animation-duration: 5s;
+  animation-name: glow;
+  animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.profile-header {
+  padding: 24px 20px;
+  margin-bottom: 16px;
+  background: linear-gradient(135deg, #dfe3eb 25%, #e3e653 100%);
+  border: 1px solid rgba(245, 241, 6, 0.836);
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+  animation-duration: 5s;
+  animation-name: glow;
+  animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  animation-fill-mode: backwards;
+  animation-delay: 0s;
+}
+
+.profile-header h1 {
+  margin: 0 0 6px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  color: #fa0707;
+  text-shadow: gold 2px 2px 12px;
+  font-size: 35px;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+.profile-header p {
+  margin: 0 0 6px;
+  color: #070a0c;
+  text-shadow: gold 1px 1px 10px;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+.profile-content { display: grid; gap: 16px; }
+
+.profile-section {
+  background: linear-gradient(135deg, #4abeb9da 0%, #deeb2f 100%);
+  border: 1px solid #0a6a6d;
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: 0 6px 20px rgba(9, 225, 233, 0.932);
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+  animation-duration: 5s;
+  animation-name: glow;
+  animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+  animation-duration: 5s; 
+  animation-name: glow;
+  animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  animation-fill-mode: backwards;
+  animation-delay: 0s;
+  color:#dfe3eb;
+  text-decoration-color: #dfe3eb;
+}
+
+h2 { margin: 0; font-size: 18px; color: #fafaf8; }
+h3 { margin: 0 0 10px; font-size: 16px; color: #f6fa02fa; }
+
+.message {
+  margin: 12px 0;
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid #20252c;
+  font-weight: 600;
+}
+.message.success { border-color: rgba(46, 204, 113, 0.3); color: #2ecc71; }
+.message.error { border-color: rgba(255, 77, 77, 0.3); color: #ff4d4d; }
+
+.profile-loading { display: grid; place-items: center; height: 220px; }
+.loading-spinner {
+  width: 36px; height: 36px;
+  border: 2px solid #20252c; border-top-color: #d4af37;
+  border-radius: 50%; animation: spin 0.9s linear infinite; margin-bottom: 10px;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+
+.profile-form .form-row {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.form-group { display: flex; flex-direction: column; gap: 8px; }
+label { font-size: 12px; color: #9aa0a6; }
+
+input[type="text"],
+input[type="tel"],
+input[type="password"],
+textarea,
+select {
+  background: #e9e9e2;
+  color: #070303;
+  border: 1px solid #20252c;
+  border-radius: 10px;
+  padding: 10px 12px;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: #92d7ec 0px 0px 10px 0px;
+  animation: forwards glow 5s ;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: rgba(212, 175, 55, 0.6);
+  box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.15);
+}
+
+textarea { resize: vertical; }
+
+.form-actions { display: flex; gap: 10px; margin-top: 14px; }
+
+.btn {
+  display: inline-flex; align-items: center; justify-content: center;
+  gap: 8px; padding: 10px 14px;
+  border-radius: 10px; border: 1px solid #20252c;
+  background: #d4d4d3de; color: #ec0707;
+  cursor: pointer;
+  box-shadow: #33313b 0px 0px 10px 0px;
+  background: linear-gradient(135deg, rgba(219, 211, 185, 0.897), rgba(233, 236, 7, 0.993));
+  transition: transform 0.05s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+  animation-duration: 5s;
+}
+.btn:hover { border-color: rgba(14, 11, 3, 0.918); box-shadow: 0 8px 16px rgba(0,0,0,0.5); }
+.btn:active { transform: translateY(1px); }
+.btn:disabled { opacity: 0.6; cursor: not-allowed; }
+
+.btn-primary {
+  background: linear-gradient(135deg, rgba(219, 211, 185, 0.897), rgba(233, 236, 7, 0.993));
+  border-color: rgba(212, 175, 55, 0.5);
+  color: #02b602;
+  box-shadow: #33313b 0px 0px 10px 0px;
+  animation: forwards glow 5s cubic-bezier(0.55, 0.055, 0.675, 0.19) infinite alternate;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+  animation-delay: 0s;
+  animation-name: glow;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+
+.btn-secondary {
+  background: linear-gradient(135deg, rgba(174, 174, 182, 0.733), rgba(233, 220, 34, 0.781));
+  border-color: rgba(180, 180, 180, 0.5);
+  color: #33313b;
+  box-shadow: #33313b 0px 0px 10px 0px;
+  animation: forwards glow 5s cubic-bezier(0.55, 0.055, 0.675, 0.19) infinite alternate;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+  animation-delay: 0s;
+  animation-name: glow;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+
+.btn-outline {
+  background: transparent;
+  border-color: rgba(226, 154, 8, 0.45);
+  border-radius: 100px;
+  box-shadow: #0e1116 0px 0px 10px 0px;
+  border-style: dashed;
+  border-bottom: 1px solid #0f1217;
+  color:rgba(233, 236, 41, 0.993);
+}
+
+.profile-info .info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+.info-item { display: grid; gap: 6px; }
+.info-item label { color: #9aa0a6; }
+.info-item.full-width { grid-column: 1 / -1; }
+
+.account-info .info-item .monospace {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  color: #d4af37;
+}
+
+.role-badge {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 999px;
+  border: 1px solid rgba(212, 175, 55, 0.4);
+  color: #d4af37;
+  background: rgba(212, 175, 55, 0.15);
+}
+
+.security-block {
+  margin-top: 16px;
+  padding-top: 10px;
+  border-top: 1px dashed rgba(212, 175, 55, 0.25);
+}
+
+.muted { color: #9aa0a6; }
+
+.twofa-actions .badge.success {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 999px;
+  background: rgba(46, 204, 113, 0.2);
+  color: #2ecc71;
+  border: 1px solid rgba(46, 204, 113, 0.4);
+}
+
+.enabled-row { display: flex; align-items: center; gap: 8px; }
+
+.qr-container {
+  margin: 10px 0; padding: 10px;
+  border: 1px dashed rgba(212, 175, 55, 0.35);
+  border-radius: 12px;
+}
+
+.activity-actions { margin: 8px 0 12px; }
+.activity-list { display: grid; gap: 8px; }
+.activity-item {
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid #20252c;
+  background: #0e1116;
+}
+.activity-row {
+  display: grid;
+  grid-template-columns: 180px 120px 1fr 1fr;
+  gap: 8px;
+}
+
+.small { font-size: 12px; }
+.monospace {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+.bold { font-weight: 600; }
+.italic { font-style: italic; }
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+.link {
+  color: #d4af37;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.link:hover { color: #f4e38a; }
+.link:active { color: #d4af37; }
+.hidden { display: none; }
+@media (max-width: 768px) {
+  .profile-form .form-row {
+    grid-template-columns: 1fr;
+  }
+  .profile-info .info-grid {
+    grid-template-columns: 1fr;
+  }
+  .activity-item .activity-row {
+    grid-template-columns: 1fr;
+  }
+}
+/* End of Profile.css */

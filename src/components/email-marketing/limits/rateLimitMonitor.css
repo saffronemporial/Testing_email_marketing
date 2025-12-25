@@ -1,0 +1,81 @@
+.rate-limit-root {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* HEADER */
+.rate-limit-header {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+/* ALERT */
+.alert-ribbon.warning {
+  border-left: 4px solid #fbbf24;
+}
+
+.alert-ribbon.critical {
+  border-left: 4px solid #ef4444;
+}
+
+/* GRID */
+.rate-metric-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 14px;
+}
+
+/* RING */
+.ring-card .ring {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 6px solid rgba(212,175,55,0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: pulseRing 2s infinite;
+}
+
+.ring-card.critical .ring {
+  border-color: #ef4444;
+}
+
+.ring-card.warning .ring {
+  border-color: #fbbf24;
+}
+
+@keyframes pulseRing {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+/* CARD */
+.metric-card strong {
+  font-size: 22px;
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  .rate-metric-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* TABLET */
+@media (max-width: 900px) {
+  .rate-metric-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* LARGE DESKTOP */
+@media (min-width: 1400px) {
+  .rate-metric-grid {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+/* end of file */

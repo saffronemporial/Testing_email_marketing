@@ -1,0 +1,25 @@
+.campaign-edit-root {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.campaign-edit-header {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.campaign-edit-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  .campaign-edit-footer {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+/* end of file */

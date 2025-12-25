@@ -1,0 +1,98 @@
+.approval-history-root {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* HEADER */
+.approval-history-header {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+/* FILTERS */
+.audit-filters {
+  display: flex;
+  gap: 12px;
+}
+
+.audit-filters select {
+  background: rgba(255,255,255,0.08);
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  color: #fff;
+}
+
+/* LOG LIST */
+.audit-log-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* CARD */
+.audit-card {
+  position: relative;
+  border-left: 4px solid transparent;
+}
+
+.audit-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.audit-card-body {
+  margin-top: 8px;
+}
+
+.audit-metadata {
+  background: rgba(0,0,0,0.4);
+  padding: 10px;
+  border-radius: 8px;
+  overflow-x: auto;
+  font-size: 12px;
+}
+
+/* SEVERITY */
+.severity-info {
+  border-left-color: #3b82f6;
+}
+
+.severity-warning {
+  border-left-color: #fbbf24;
+}
+
+.severity-critical {
+  border-left-color: #ef4444;
+}
+
+/* MOBILE PORTRAIT */
+@media (max-width: 600px) {
+  .audit-filters {
+    flex-direction: column;
+  }
+
+  .audit-card-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+}
+
+/* TABLET / MOBILE LANDSCAPE */
+@media (max-width: 900px) {
+  .audit-filters {
+    gap: 10px;
+  }
+}
+
+/* LARGE DESKTOP */
+@media (min-width: 1400px) {
+  .audit-log-list {
+    max-width: 1100px;
+  }
+}
+/* end of file */

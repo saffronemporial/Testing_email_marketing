@@ -1,0 +1,84 @@
+/* src/components/Landing/FarmersSection.css */
+
+.far-wrapper {
+  padding: 3rem 1.25rem 3.5rem;
+  background: radial-gradient(circle at top, #020617 0, #020617 70%);
+}
+
+.far-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.far-header {
+  text-align: center;
+  margin-bottom: 1.7rem;
+}
+
+.far-header h2 {
+  font-size: 2rem;
+}
+
+.far-header p {
+  color: #9ca3af;
+  max-width: 30rem;
+  margin: 0.35rem auto 0;
+}
+
+.far-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+
+.far-card {
+  border-radius: 18px;
+  padding: 0.9rem 0.9rem 1rem;
+  background: radial-gradient(circle at top left, #111827, #020617);
+  border: 1px solid rgba(55, 65, 81, 0.9);
+  display: flex;
+  gap: 0.75rem;
+}
+
+.far-avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #22c55e, #a3e635);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #052e16;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.far-body h3 {
+  font-size: 0.98rem;
+  margin-bottom: 0.1rem;
+}
+
+.far-region {
+  font-size: 0.8rem;
+  color: #9ca3af;
+  margin-bottom: 0.3rem;
+}
+
+.far-story {
+  font-size: 0.85rem;
+  color: #e5e7eb;
+}
+
+/* Responsive */
+
+@media (max-width: 1024px) {
+  .far-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .far-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

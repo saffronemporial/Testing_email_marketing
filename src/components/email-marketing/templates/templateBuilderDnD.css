@@ -1,0 +1,70 @@
+.template-builder-root {
+  display: grid;
+  grid-template-columns: 220px 1fr 260px;
+  height: calc(100vh - 120px);
+  gap: 12px;
+}
+
+.builder-panel {
+  background: rgba(255,255,255,0.05);
+  padding: 12px;
+  border-radius: 14px;
+}
+
+.builder-canvas {
+  display: flex;
+  justify-content: center;
+  overflow-y: auto;
+}
+
+.email-preview {
+  width: 600px;
+  background: #fff;
+  color: #000;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.email-block {
+  border: 1px dashed transparent;
+  padding: 10px;
+  margin-bottom: 10px;
+  cursor: grab;
+}
+
+.email-block.active {
+  border-color: #d4af37;
+  background: rgba(212,175,55,0.1);
+}
+
+.email-btn {
+  display: inline-block;
+  padding: 10px 18px;
+  background: linear-gradient(135deg,#d4af37,#fbbf24);
+  color: #000;
+  border-radius: 24px;
+  text-decoration: none;
+}
+
+.image-placeholder {
+  height: 120px;
+  background: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* MOBILE */
+@media(max-width:900px){
+  .template-builder-root{
+    grid-template-columns: 1fr;
+  }
+
+  .builder-panel, .builder-canvas {
+    display: none;
+  }
+  .email-preview {
+    width: 100%;
+  }
+}
+/* end of file */

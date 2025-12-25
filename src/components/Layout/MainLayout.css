@@ -1,0 +1,44 @@
+/* src/components/Layout/MainLayout.css */
+
+.main-layout { 
+  display:flex;
+   min-height:100vh; 
+   position:relative;
+   }
+.sidebar-container { width:250px; flex-shrink:0; transition: transform .3s ease; z-index:40; }
+.main-content { 
+  flex:1; 
+  display:flex; 
+  flex-direction:column; 
+  min-width:0; 
+}
+.content-area {
+   flex:1; 
+   padding:20px; 
+   overflow-y:auto; 
+  }
+.content-wrapper
+ { padding:20px; 
+}
+
+.content-inner {
+   max-width:1200px; 
+   margin:0 auto; 
+   width:100%; }
+
+
+@media (max-width: 768px) {
+  .sidebar-container {
+    position:fixed ; 
+    top:0; 
+    left:0;
+    height:100% !important;
+    background:#fff; 
+    box-shadow:2px 0 12px rgba(0,0,0,0.1); 
+    transform:translateX(-100%); 
+  }
+    .sidebar-open .sidebar-container {
+     transform:translateX(0);
+     }
+}
+/* End of src/components/Layout/MainLayout.css */

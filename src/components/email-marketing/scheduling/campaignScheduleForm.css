@@ -1,0 +1,77 @@
+.schedule-form-root {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* HEADER */
+.schedule-form-header {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+/* FORM CARD */
+.schedule-form-card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.schedule-form-card input[type="datetime-local"] {
+  background: rgba(255,255,255,0.08);
+  border: none;
+  border-radius: 12px;
+  padding: 12px;
+  color: #fff;
+}
+
+/* PREVIEW */
+.schedule-preview {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background: rgba(255,255,255,0.05);
+  border-radius: 10px;
+}
+
+.schedule-preview strong {
+  color: #d4af37;
+}
+
+/* CONFIRM */
+.confirm-row {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+/* FOOTER */
+.schedule-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* MOBILE PORTRAIT */
+@media (max-width: 600px) {
+  .schedule-footer {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+/* TABLET / MOBILE LANDSCAPE */
+@media (max-width: 900px) {
+  .schedule-form-card {
+    gap: 10px;
+  }
+}
+
+/* LARGE DESKTOP */
+@media (min-width: 1400px) {
+  .schedule-form-root {
+    max-width: 900px;
+  }
+}
+/* end of file */

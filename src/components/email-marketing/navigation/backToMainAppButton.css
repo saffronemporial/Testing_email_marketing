@@ -1,0 +1,77 @@
+/* =========================================================
+   BACK TO MAIN APP BUTTON — GOLD PREMIUM
+   ========================================================= */
+
+.em-back-main-btn {
+  width: 100%;
+  padding: 12px;
+  border-radius: 14px;
+  background: linear-gradient(90deg, #d4af37, #b8962e);
+  color: #000;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: all 0.35s ease;
+}
+
+.em-back-main-btn:hover {
+  box-shadow: 0 0 22px rgba(212, 175, 55, 0.7);
+  transform: translateY(-1px);
+}
+
+/* ---------------- CONFIRM MODAL ---------------- */
+
+.em-confirm-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(6px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.em-confirm-modal {
+  background: rgba(15, 18, 40, 0.95);
+  border-radius: 18px;
+  padding: 26px;
+  width: 380px;
+  border: 1px solid rgba(212, 175, 55, 0.3);
+}
+
+.em-confirm-modal h3 {
+  color: #d4af37;
+  margin-bottom: 10px;
+}
+
+.em-confirm-modal p {
+  font-size: 14px;
+  color: #cbd5e1;
+  margin-bottom: 20px;
+}
+
+.em-confirm-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+.em-confirm-cancel {
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.em-confirm-leave {
+  background: linear-gradient(90deg, #d4af37, #b8962e);
+  color: #000;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+}

@@ -1,0 +1,126 @@
+.hww-section {
+  padding: 4rem 1rem;
+  background: linear-gradient(180deg, #ffffff 0%, #f9fafb 40%, #fefce8 100%);
+}
+
+.hww-inner {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.hww-header {
+  text-align: center;
+  margin-bottom: 2.25rem;
+}
+
+.hww-kicker {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  font-weight: 600;
+  color: #92400e;
+  margin-bottom: 0.4rem;
+}
+
+.hww-title {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 0.6rem;
+  background: linear-gradient(120deg, #b45309, #f97316, #16a34a);
+    -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hww-subtitle {
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 0.95rem;
+  color: #4b5563;
+}
+
+.hww-steps {
+  margin-top: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.hww-card {
+  position: relative;
+  padding: 1.3rem 1.1rem 1.4rem;
+  border-radius: 1rem;
+  background: #ffffff;
+  border: 1px solid rgba(209, 213, 219, 0.85);
+  box-shadow: 0 14px 35px rgba(15, 23, 42, 0.08);
+  overflow: hidden;
+  transition: transform 0.16s ease, box-shadow 0.16s ease, border-color 0.16s ease;
+}
+
+.hww-card::before {
+  content: '';
+  position: absolute;
+  inset: -30%;
+  background: radial-gradient(circle at 0% 0%, rgba(251, 191, 36, 0.18), transparent 55%);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.hww-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(248, 181, 24, 0.9);
+  box-shadow: 0 20px 45px rgba(15, 23, 42, 0.14);
+}
+
+.hww-card:hover::before {
+  opacity: 1;
+}
+
+.hww-label {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-weight: 600;
+  color: #9ca3af;
+  margin-bottom: 0.4rem;
+}
+
+.hww-card-title {
+  font-size: 1.02rem;
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+  color: #111827;
+}
+
+.hww-card-body {
+  font-size: 0.88rem;
+  color: #4b5563;
+  margin-bottom: 0.4rem;
+}
+
+.hww-card-highlight {
+  font-size: 0.8rem;
+  color: #92400e;
+  background: rgba(254, 243, 199, 0.9);
+  border-radius: 999px;
+  padding: 0.25rem 0.5rem;
+  display: inline-block;
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
+  .hww-steps {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .hww-steps {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .hww-section {
+    padding: 3rem 1rem;
+  }
+}

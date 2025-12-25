@@ -1,0 +1,10 @@
+.campaign-detail-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.campaign-actions {
+  display: flex;
+  gap: 12px;
+}

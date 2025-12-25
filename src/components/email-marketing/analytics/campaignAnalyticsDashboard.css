@@ -1,0 +1,75 @@
+.analytics-root {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* HEADER */
+.analytics-header {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+/* KPI SUMMARY */
+.analytics-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 14px;
+}
+
+.kpi-card strong {
+  font-size: 26px;
+  color: #d4af37;
+}
+
+/* CAMPAIGN GRID */
+.analytics-campaign-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 18px;
+}
+
+.analytics-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.analytics-metrics {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.metric strong {
+  color: #d4af37;
+}
+
+/* MOBILE PORTRAIT */
+@media (max-width: 600px) {
+  .analytics-summary-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .analytics-metrics {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* TABLET / MOBILE LANDSCAPE */
+@media (max-width: 900px) {
+  .analytics-summary-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* LARGE DESKTOP */
+@media (min-width: 1400px) {
+  .analytics-summary-grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+/* end of file */

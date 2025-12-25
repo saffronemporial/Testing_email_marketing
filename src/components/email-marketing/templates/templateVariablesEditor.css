@@ -1,0 +1,44 @@
+.variables-root {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.variables-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+.variable-card input,
+.variable-card textarea,
+.variable-card select {
+  width: 100%;
+}
+
+.variable-flags {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 6px;
+}
+
+.variable-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  .variables-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* TABLET */
+@media (max-width: 900px) {
+  .variables-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/* end of file */

@@ -1,0 +1,8 @@
+{
+  "imports": {
+    "@std/async": "https://deno.land/std@0.224.0/async/mod.ts",
+    "@supabase/supabase-js": "https://esm.sh/@supabase/supabase-js@2.39.8",
+    "resend": "https://esm.sh/resend@6.0.2",
+    "nodemailer": "npm:nodemailer@6.9.7"
+  }
+}

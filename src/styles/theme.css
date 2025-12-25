@@ -1,0 +1,8 @@
+/* src/styles/theme.css */
+
+.saffron-bg { background-color: var(--saffron); }
+.gold-bg { background-color: var(--gold); }
+.saffron-text { color: var(--saffron); }
+.gold-text { color: var(--gold); }
+.shadow-dark { box-shadow: 0 4px 12px var(--textShadowDark); }
+/* End of src/styles/theme.css */

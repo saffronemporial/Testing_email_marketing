@@ -1,0 +1,201 @@
+/* Saffron Trust Score styles */
+
+.trust-section {
+  padding: 4rem 1rem;
+  background: radial-gradient(circle at top, #111827 0%, #020617 55%, #000 100%);
+  color: #e5e7eb;
+}
+
+.trust-inner {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.trust-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.trust-title {
+  font-size: 2.25rem;
+  font-weight: 800;
+  background: linear-gradient(120deg, #f97316, #facc15, #22c55e);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.trust-sub {
+  margin-top: 0.75rem;
+  font-size: 0.95rem;
+  color: #9ca3af;
+}
+
+.trust-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1.6fr);
+  gap: 1.75rem;
+}
+
+.trust-gauge-card,
+.trust-metrics-card {
+  border-radius: 20px;
+  padding: 1.75rem;
+  background: linear-gradient(135deg, rgba(15,23,42,0.95), rgba(24,24,27,0.95));
+  border: 1px solid rgba(248, 250, 252, 0.08);
+  box-shadow: 0 24px 60px rgba(15,23,42,0.65);
+}
+
+/* Gauge */
+
+.gauge-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.25rem;
+}
+
+.gauge-ring {
+  position: relative;
+  width: 220px;
+  height: 220px;
+  border-radius: 9999px;
+  background: conic-gradient(
+    from 220deg,
+    #15803d calc(var(--trust-score, 0) * 1%),
+    rgba(31,41,55,0.8) 0
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+}
+
+.gauge-ring::after {
+  content: '';
+  position: absolute;
+  inset: 1.4rem;
+  border-radius: inherit;
+  background: radial-gradient(circle at top, #020617, #020617 65%, #0b1220 100%);
+}
+
+.gauge-center {
+  position: relative;
+  text-align: center;
+  z-index: 1;
+}
+
+.gauge-label {
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #9ca3af;
+}
+
+.gauge-value {
+  display: block;
+  font-size: 2.75rem;
+  font-weight: 800;
+  color: #facc15;
+  text-shadow: 0 0 12px rgba(250,204,21,0.45);
+}
+
+.gauge-unit {
+  font-size: 0.8rem;
+  color: #6b7280;
+}
+
+.gauge-footnote {
+  margin-top: 0.75rem;
+  font-size: 0.8rem;
+  color: #9ca3af;
+  text-align: center;
+}
+
+/* Metrics */
+
+.trust-error {
+  margin-bottom: 1rem;
+  padding: 0.65rem 0.9rem;
+  border-radius: 0.75rem;
+  background: rgba(239,68,68,0.08);
+  border: 1px solid rgba(239,68,68,0.4);
+  color: #fecaca;
+  font-size: 0.8rem;
+}
+
+.metric-row {
+  margin-bottom: 1.25rem;
+}
+
+.metric-label {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #9ca3af;
+  margin-bottom: 0.2rem;
+}
+
+.metric-value {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #e5e7eb;
+}
+
+.metric-bar {
+  margin-top: 0.4rem;
+  height: 8px;
+  border-radius: 9999px;
+  background: rgba(31,41,55,0.9);
+  overflow: hidden;
+}
+
+.metric-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #22c55e, #facc15);
+  border-radius: inherit;
+}
+
+.metric-pill-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.4rem;
+}
+
+.metric-pill {
+  font-size: 0.75rem;
+  padding: 0.25rem 0.6rem;
+  border-radius: 9999px;
+  border: 1px solid rgba(148,163,184,0.5);
+  background: rgba(15,23,42,0.9);
+}
+
+/* Bullets */
+
+.trust-bullets {
+  list-style: none;
+  padding: 0;
+  margin: 1.25rem 0 0;
+  font-size: 0.85rem;
+  color: #9ca3af;
+}
+
+.trust-bullets li {
+  display: flex;
+  gap: 0.4rem;
+  margin-bottom: 0.35rem;
+}
+
+.trust-bullets li::before {
+  content: '•';
+  color: #f97316;
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
+  .trust-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

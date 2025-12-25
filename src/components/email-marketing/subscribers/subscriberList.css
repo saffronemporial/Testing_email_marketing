@@ -1,0 +1,61 @@
+/* =========================================================
+   SUBSCRIBER LIST — DENSE PREMIUM TABLE
+   ========================================================= */
+
+.subscriber-list-wrap {
+  margin-top: 20px;
+}
+
+.subscriber-list-filters {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.subscriber-list-filters input,
+.subscriber-list-filters select {
+  background: rgba(255, 255, 255, 0.08);
+  border: none;
+  padding: 8px 12px;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.subscriber-list-table thead {
+  position: sticky;
+  top: 0;
+  background: rgba(10, 12, 25, 0.95);
+}
+
+.skeleton-row td {
+  height: 36px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.04),
+    rgba(212, 175, 55, 0.12),
+    rgba(255, 255, 255, 0.04)
+  );
+  animation: shimmer 1.3s infinite;
+}
+
+@keyframes shimmer {
+  to {
+    background-position: 200% 0;
+  }
+}
+
+.subscriber-pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 14px;
+}
+
+.subscriber-pagination button {
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  padding: 6px 14px;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+}

@@ -1,0 +1,26 @@
+/* =========================================================
+   SUBSCRIBER DASHBOARD — GOLD PREMIUM
+   ========================================================= */
+
+.subscriber-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 24px;
+}
+
+.subscriber-filters select {
+  background: rgba(255, 255, 255, 0.08);
+  border: none;
+  padding: 8px 14px;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.subscriber-table tr:hover {
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.subscriber-table input[type="checkbox"] {
+  accent-color: #d4af37;
+}

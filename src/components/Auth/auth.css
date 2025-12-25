@@ -1,0 +1,236 @@
+/* src/components/Auth/auth.css */
+
+.auth-container { min-height:100vh; display:flex; align-items:center; justify-content:center; padding:20px; background:linear-gradient(180deg,#f6f9fb,#cacec9); }
+.auth-card { background:rgba(248, 248, 246, 0.74); padding:28px; border-radius:10px; box-shadow: 0 8px 30px rgba(0,0,0,0.06); width:100%; max-width:520px; }
+.auth-card h2 { text-align:center; margin-bottom:8px; color:#fa0000; }
+.auth-subtitle { text-align:center; color:#000000; margin-bottom:20px; }
+.form-group { margin-bottom:16px;  color:#080301 !important; }
+.form-group label { display:block; margin-bottom:6px; font-weight:500; color:#03070a !important; }
+.form-group input { width:100%; padding:10px 12px; border:1px solid #91c8d8 !important; border-radius:6px; font-size:15px; color: #000000 !important; }
+.form-group input:focus { border-color: #3498db; outline:none; }
+.form-actions { display:flex; justify-content:space-between; align-items:center; margin-top:12px; gap:10px; }
+.login-methods { display:flex; gap:6px; border-bottom:1px solid #ecf0f1; padding-bottom:8px; margin-bottom:12px; }
+.method-tab { flex:1; padding:10px; background:none; border:none; border-bottom:3px solid transparent; cursor:pointer; font-weight:500; color:#7f8c8d; }
+.method-tab.active { color:#3498db; border-bottom-color:#3498db; }
+.auth-footer { text-align:center; margin-top:12px; color:#7f8c8d; }
+.auth-footer a { color:#3498db; text-decoration:none; }
+.auth-footer a:hover { text-decoration:underline; }
+.form-group input::selection { color: #000000 !important; background-color: #91c8d8; }
+.form-group input::-webkit-input-placeholder { color: #999999 !important; }
+.form-group input:-ms-input-placeholder { color: #999999 !important; }
+.form-group input::placeholder { color: #999999 !important; }
+
+
+/* End of src/components/Auth/auth.css */
+/* Gold Premium Theme for Auth Components */
+
+.auth-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #1a1410 0%, #2d2416 50%, #1a1410 100%) !important;
+}
+
+.auth-card {
+    background: linear-gradient(135deg, rgba(255, 215, 0, 0.08) 0%, rgba(184, 134, 11, 0.06) 100%) !important;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 20px 60px rgba(255, 215, 0, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.1) !important;
+    width: 100%;
+    max-width: 520px;
+    border: 1px solid rgba(255, 215, 0, 0.2) !important;
+    backdrop-filter: blur(10px) !important;
+}
+
+.auth-card h2 {
+    text-align: center;
+    margin-bottom: 12px;
+    color: #ffd700 !important;
+    font-size: 28px !important;
+    font-weight: 700 !important;
+    text-shadow: 0 2px 10px rgba(255, 215, 0, 0.3) !important;
+}
+
+.auth-subtitle {
+    text-align: center;
+    color: #e0e0e0 !important;
+    margin-bottom: 28px;
+    font-size: 14px !important;
+}
+
+.form-group {
+    margin-bottom: 20px !important;
+    color: #e0e0e0 !important;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600 !important;
+    color: #ffd700 !important;
+    font-size: 14px !important;
+}
+
+.form-group input {
+    width: 100% !important;
+    padding: 12px 15px !important;
+    border: 2px solid rgba(255, 215, 0, 0.3) !important;
+    border-radius: 8px !important;
+    font-size: 15px !important;
+    color: #ffffff !important;
+    background: rgba(30, 30, 30, 0.6) !important;
+    transition: all 0.3s ease !important;
+}
+
+.form-group input:focus {
+    border-color: #ffd700 !important;
+    outline: none !important;
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.4), inset 0 0 10px rgba(255, 215, 0, 0.1) !important;
+    background: rgba(30, 30, 30, 0.8) !important;
+}
+
+.form-group input::placeholder {
+    color: #999999 !important;
+}
+
+.form-group input::-webkit-input-placeholder {
+    color: #999999 !important;
+}
+
+.form-group input:-ms-input-placeholder {
+    color: #999999 !important;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px !important;
+    gap: 12px !important;
+}
+
+.login-methods {
+    display: flex;
+    gap: 8px;
+    border-bottom: 2px solid rgba(255, 215, 0, 0.2) !important;
+    padding-bottom: 12px;
+    margin-bottom: 24px !important;
+}
+
+.method-tab {
+    flex: 1;
+    padding: 12px;
+    background: none !important;
+    border: none !important;
+    border-bottom: 3px solid transparent !important;
+    cursor: pointer;
+    font-weight: 600 !important;
+    color: #999999 !important;
+    transition: all 0.3s ease !important;
+}
+
+.method-tab:hover {
+    color: #ffd700 !important;
+}
+
+.method-tab.active {
+    color: #ffd700 !important;
+    border-bottom-color: #ffd700 !important;
+    text-shadow: 0 0 8px rgba(255, 215, 0, 0.5) !important;
+}
+
+.auth-footer {
+    text-align: center;
+    margin-top: 20px !important;
+    color: #999999 !important;
+    font-size: 14px !important;
+}
+
+.auth-footer a {
+    color: #ffd700 !important;
+    text-decoration: none !important;
+    font-weight: 600 !important;
+    transition: all 0.3s ease !important;
+}
+
+.auth-footer a:hover {
+    color: #ffed4e !important;
+    text-shadow: 0 0 8px rgba(255, 215, 0, 0.5) !important;
+}
+
+button[type="submit"], .btn-submit {
+    width: 100% !important;
+    padding: 12px !important;
+    background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%) !important;
+    color: #1a1410 !important;
+    border: none !important;
+    border-radius: 8px !important;
+    font-weight: 700 !important;
+    font-size: 16px !important;
+    cursor: pointer !important;
+    transition: all 0.3s ease !important;
+    box-shadow: 0 8px 20px rgba(255, 215, 0, 0.3) !important;
+}
+
+button[type="submit"]:hover, .btn-submit:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 12px 30px rgba(255, 215, 0, 0.5) !important;
+}
+
+button[type="submit"]:active, .btn-submit:active {
+    transform: translateY(0) !important;
+}
+
+.form-group input::selection {
+    color: #1a1410 !important;
+    background-color: #ffd700 !important;
+}
+.form-group input::-webkit-input-placeholder {
+    color: #cccccc !important;
+}
+.form-group input:-ms-input-placeholder {
+    color: #cccccc !important;
+}
+.form-group input::placeholder {
+    color: #cccccc !important;
+}
+.checkbox-label input[type="checkbox"] {
+    accent-color: #ffd700 !important;
+}
+
+.checkbox-instruction {
+    color: #cccccc !important;
+    margin-bottom: 16px !important;
+}
+
+.checkbox-group {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 20px !important;
+    padding: 0 !important;
+    border: none !important;
+    background: none !important;
+    margin-bottom: 20px !important;
+}
+
+.checkbox-group .checkbox-label {
+    position: relative !important;
+    padding-left: 5px !important;
+    padding-right: 160px !important;
+    margin-right: 0 !important;
+    cursor: pointer !important;
+    color: #e0e0e0 !important;
+    display:flex !important;
+    align-items:center !important;
+}
+
+.checkbox-group .checkbox-label input[type="checkbox"] {
+    position: absolute !important;
+    left: 0 !important;
+    margin: 0 !important;
+}
+
+/* gap: 12px !important;  margin-top: 8px !important; */
+/* End of Gold Premium Theme for Auth Components */

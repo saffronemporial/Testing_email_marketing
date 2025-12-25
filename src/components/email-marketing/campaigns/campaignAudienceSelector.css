@@ -1,0 +1,65 @@
+.audience-root {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.audience-header {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.locked-segment {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.estimation-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.estimate-result {
+  text-align: right;
+}
+
+.estimate-result.risk strong {
+  color: #ef4444;
+  animation: pulseRisk 1.5s infinite;
+}
+
+@keyframes pulseRisk {
+  0% { opacity: 0.7; }
+  50% { opacity: 1; }
+  100% { opacity: 0.7; }
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  .estimation-card {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+}
+.estimate-result.risk strong {
+  color: #ef4444;
+  animation: pulseRisk 1.5s infinite;
+}   
+@keyframes pulseRisk {
+  0% { opacity: 0.7; }
+  50% { opacity: 1; }
+  100% { opacity: 0.7; }
+}   
+/* MOBILE */
+@media (max-width: 600px) {
+  .estimation-card {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+}   
+/* END OF FILE */

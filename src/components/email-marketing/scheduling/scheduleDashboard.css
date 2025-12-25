@@ -1,0 +1,80 @@
+.schedule-dashboard-root {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* HEADER */
+.schedule-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* SUMMARY BAR */
+.schedule-summary {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+.summary-stat strong {
+  font-size: 24px;
+  color: #d4af37;
+}
+
+/* GRID */
+.schedule-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 18px;
+}
+
+/* CARD */
+.schedule-card {
+  position: relative;
+  transition: 0.3s ease;
+}
+
+.schedule-card.urgent {
+  box-shadow: 0 0 28px rgba(239, 68, 68, 0.4);
+}
+
+.schedule-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.countdown {
+  font-size: 14px;
+  color: #fbbf24;
+}
+
+/* ACTIONS */
+.schedule-actions {
+  margin-top: 12px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* MOBILE PORTRAIT */
+@media (max-width: 600px) {
+  .schedule-summary {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* MOBILE LANDSCAPE / TABLET */
+@media (max-width: 900px) {
+  .schedule-summary {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* LARGE DESKTOP */
+@media (min-width: 1400px) {
+  .schedule-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

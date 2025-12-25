@@ -1,0 +1,88 @@
+/* =========================================================
+   EMAIL HEADER — GOLD EXECUTIVE DASHBOARD
+   ========================================================= */
+
+.em-header-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 24px;
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.em-header-left h1 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.em-header-kpis {
+  display: flex;
+  gap: 12px;
+  margin-top: 6px;
+}
+
+.em-kpi-card {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 8px 14px;
+  min-width: 110px;
+}
+
+.em-kpi-card span {
+  font-size: 11px;
+  color: #9ca3af;
+}
+
+.em-kpi-card strong {
+  font-size: 18px;
+  color: #d4af37;
+}
+
+/* ---------------- RIGHT ---------------- */
+.em-header-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.em-header-search {
+  background: rgba(255, 255, 255, 0.08);
+  border: none;
+  border-radius: 10px;
+  padding: 8px 14px;
+  color: #fff;
+  width: 220px;
+}
+
+.em-header-btn {
+  padding: 8px 16px;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.em-header-btn.primary {
+  background: linear-gradient(90deg, #d4af37, #b8962e);
+  border: none;
+  color: #000;
+}
+
+.em-header-btn.primary:hover {
+  box-shadow: 0 0 18px rgba(212, 175, 55, 0.7);
+}
+
+.em-header-btn.ghost {
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  color: #fff;
+}
+
+.em-role-pill {
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: rgba(212, 175, 55, 0.2);
+  color: #d4af37;
+  font-size: 12px;
+}

@@ -1,0 +1,83 @@
+.ai-dashboard-root {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* HEADER */
+.ai-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* STATE CARDS */
+.ai-state-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+.ai-state-card strong {
+  font-size: 28px;
+  color: #d4af37;
+}
+
+/* MAIN GRID */
+.ai-main-grid {
+  display: grid;
+  grid-template-columns: 360px 1fr;
+  gap: 18px;
+}
+
+/* LIST */
+.ai-draft-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.ai-draft-item {
+  padding: 12px;
+  border-radius: 12px;
+  cursor: pointer;
+  background: rgba(255,255,255,0.05);
+  transition: 0.3s ease;
+}
+
+.ai-draft-item:hover {
+  box-shadow: 0 0 18px rgba(212,175,55,0.25);
+}
+
+.ai-draft-item.active {
+  outline: 2px solid #d4af37;
+}
+
+/* PREVIEW */
+.ai-draft-preview {
+  height: calc(100vh - 240px);
+  overflow-y: auto;
+}
+
+.preview-card h3 {
+  margin-bottom: 12px;
+}
+
+.email-preview {
+  border: 1px dashed rgba(255,255,255,0.2);
+  padding: 12px;
+  margin-bottom: 14px;
+}
+
+/* ACTIONS */
+.ai-preview-actions {
+  display: flex;
+  gap: 12px;
+}
+
+/* MOBILE */
+@media (max-width: 900px) {
+  .ai-main-grid {
+    grid-template-columns: 1fr;
+  }
+}

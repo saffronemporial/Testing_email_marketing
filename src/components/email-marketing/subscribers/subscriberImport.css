@@ -1,0 +1,59 @@
+.subscriber-import-root {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.upload-card input {
+  width: 100%;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 12px;
+}
+
+.stat-card strong {
+  font-size: 22px;
+  color: #d4af37;
+}
+
+.preview-table {
+  overflow-x: auto;
+}
+
+.preview-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.preview-table th,
+.preview-table td {
+  padding: 8px;
+}
+
+.row-valid {
+  background: rgba(34,197,94,0.1);
+}
+
+.row-duplicate {
+  background: rgba(251,191,36,0.1);
+}
+
+.row-suppressed {
+  background: rgba(239,68,68,0.1);
+}
+
+.import-footer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/* end of file */

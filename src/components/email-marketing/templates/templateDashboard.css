@@ -1,0 +1,38 @@
+/* =========================================================
+   TEMPLATE DASHBOARD — GOLD PREMIUM
+   ========================================================= */
+
+.template-dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.template-dashboard-header select {
+  background: rgba(255, 255, 255, 0.08);
+  border: none;
+  padding: 8px 14px;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.template-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 18px;
+}
+
+.template-card h3 {
+  margin-bottom: 8px;
+}
+
+.template-meta {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.template-card button {
+  margin-top: 12px;
+}

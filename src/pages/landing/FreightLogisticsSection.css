@@ -1,0 +1,261 @@
+/* src/components/Landing/FreightLogisticsSection.css */
+
+.freight-wrapper {
+  padding: 3rem 1.25rem 3.5rem;
+  background: radial-gradient(circle at top, #020617 0, #020617 30%, #020617 100%);
+}
+
+.freight-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.freight-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.freight-header h2 {
+  font-size: 2.1rem;
+  margin-bottom: 0.4rem;
+}
+
+.freight-header p {
+  color: #9ca3af;
+  max-width: 34rem;
+  margin: 0 auto;
+}
+
+.freight-panel {
+  border-radius: 24px;
+  padding: 1.75rem 1.6rem;
+  background: radial-gradient(circle at top left, rgba(15, 23, 42, 0.7), #020617);
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  box-shadow: 0 24px 60px rgba(15, 23, 42, 0.85);
+}
+
+.freight-panel-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: flex-start;
+  margin-bottom: 1.25rem;
+}
+
+.freight-panel-header h3 {
+  font-size: 1.25rem;
+}
+
+.freight-panel-header p {
+  font-size: 0.85rem;
+  color: #9ca3af;
+}
+
+.freight-status {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.pill {
+  font-size: 0.75rem;
+  padding: 0.3rem 0.7rem;
+  border-radius: 999px;
+  border: 1px solid transparent;
+}
+
+.pill.green {
+  background: rgba(16, 185, 129, 0.18);
+  color: #bbf7d0;
+  border-color: rgba(16, 185, 129, 0.3);
+}
+
+.pill.soft {
+  background: rgba(15, 23, 42, 0.8);
+  color: #e5e7eb;
+  border-color: rgba(148, 163, 184, 0.4);
+}
+
+/* Map area */
+
+.freight-map {
+  position: relative;
+  margin-bottom: 1.6rem;
+  border-radius: 22px;
+  overflow: hidden;
+  height: 260px;
+  border: 1px solid rgba(56, 189, 248, 0.4);
+}
+
+.freight-ocean-bg {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at top, #0ea5e9, #020617 60%);
+  opacity: 0.9;
+}
+
+.freight-svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Ships */
+
+.freight-ship {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.freight-ship-dot {
+  width: 32px;
+  height: 32px;
+  border-radius: 999px;
+  border: none;
+  background: #10b981;
+  color: #f9fafb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 0 18px rgba(34, 197, 94, 0.9);
+}
+
+.freight-ship-dot:hover {
+  transform: translateY(-1px) scale(1.03);
+}
+
+.freight-ship-label {
+  margin-top: 0.25rem;
+  font-size: 0.7rem;
+  color: #bbf7d0;
+}
+
+/* Ship cam */
+
+.freight-ship-cam {
+  position: absolute;
+  right: 0.75rem;
+  top: 0.75rem;
+  padding: 0.55rem 0.7rem;
+  border-radius: 0.75rem;
+  background: rgba(248, 113, 113, 0.95);
+  color: #f9fafb;
+  font-size: 0.7rem;
+}
+
+.ship-cam-title {
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.68rem;
+}
+
+.ship-cam-meta {
+  font-size: 0.7rem;
+}
+
+.ship-cam-meta.small {
+  opacity: 0.92;
+}
+
+/* Cards */
+
+.freight-cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.freight-card {
+  border-radius: 18px;
+  padding: 1rem;
+  color: #f9fafb;
+  font-size: 0.88rem;
+}
+
+.freight-card.green {
+  background: linear-gradient(135deg, #064e3b, #047857);
+}
+
+.freight-card.blue {
+  background: linear-gradient(135deg, #0b1120, #1d4ed8);
+}
+
+.freight-card.purple {
+  background: linear-gradient(135deg, #1e1033, #5b21b6);
+}
+
+.freight-card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.7rem;
+}
+
+.freight-card-head h4 {
+  font-size: 1rem;
+}
+
+.badge {
+  font-size: 0.7rem;
+  padding: 0.25rem 0.6rem;
+  border-radius: 999px;
+  background: rgba(15, 23, 42, 0.2);
+  border: 1px solid rgba(248, 250, 252, 0.4);
+}
+
+.freight-card dl {
+  display: grid;
+  gap: 0.25rem;
+  margin-bottom: 0.7rem;
+}
+
+.freight-card dt {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  opacity: 0.75;
+}
+
+.freight-card dd {
+  margin: 0;
+}
+
+.freight-progress {
+  height: 8px;
+  border-radius: 999px;
+  background: rgba(15, 23, 42, 0.35);
+  overflow: hidden;
+}
+
+.freight-progress > div {
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, #22c55e, #4ade80);
+}
+
+/* Responsive */
+
+@media (max-width: 960px) {
+  .freight-cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .freight-panel-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .freight-map {
+    height: 220px;
+  }
+
+  .freight-cards {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

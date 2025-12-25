@@ -1,0 +1,61 @@
+/* components/LandingPage/sections/Footer.css */
+.footer {
+  background: linear-gradient(135deg, #0a0a0f 0%, #1a1a2e 100%);
+  border-top: 1px solid rgba(212, 175, 55, 0.3);
+  position: relative;
+}
+
+.footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, 
+    transparent 0%, 
+    #D4AF37 20%, 
+    #FFD700 50%, 
+    #D4AF37 80%, 
+    transparent 100%);
+}
+
+.footer-logo {
+  background: linear-gradient(135deg, #D4AF37 0%, #FFD700 50%, #FDB931 100%);
+  box-shadow: 0 0 20px rgba(212, 175, 55, 0.4);
+  animation: logoPulse 3s ease-in-out infinite;
+}
+
+@keyframes logoPulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+/* Newsletter form */
+.footer input[type="email"] {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.footer input[type="email"]:focus {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(212, 175, 55, 0.6);
+  box-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
+  outline: none;
+}
+
+.footer button[type="submit"] {
+  background: linear-gradient(135deg, #D4AF37 0%, #FFD700 100%);
+  border: none;
+  color: #0a0a0f;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.footer button[type="submit"]:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(212, 175, 55, 0.4);
+}

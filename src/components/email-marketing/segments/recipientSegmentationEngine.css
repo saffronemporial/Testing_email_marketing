@@ -1,0 +1,57 @@
+.segment-root {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.segment-header {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+/* RULES */
+.rules-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.rule-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+  gap: 10px;
+  align-items: center;
+}
+
+/* ESTIMATION */
+.estimation-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* FOOTER */
+.segment-footer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  .rule-card {
+    grid-template-columns: 1fr;
+  }
+
+  .estimation-bar {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+/* TABLET */
+@media (max-width: 900px) {
+  .rule-card {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+/* end of file */

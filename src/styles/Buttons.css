@@ -1,0 +1,16 @@
+/* src/styles/buttons.css */
+
+.btn { padding: 10px 16px; border-radius:8px; font-size:15px; font-weight:600; cursor:pointer; border:none; }
+.btn-primary { background-color: #3498db; color:white; }
+.btn-primary:hover:not(:disabled) { background-color:#2980b9; }
+.btn-primary:disabled { background-color:#bdc3c7; cursor:not-allowed; }
+
+.btn-text { background:none; color:#3498db; text-decoration:underline; border:none; cursor:pointer; }
+.btn-text:hover { color:#2980b9; }
+
+/* alerts */
+.error-message { background: #ffeaea; color:#e74c3c; padding:12px; border-radius:6px; border-left:4px solid #e74c3c; }
+.success-message { background:#d4edda; color:#155724; padding:12px; border-radius:6px; border-left:4px solid #155724; text-align:center; }
+.info-message { background:#d1ecf1; color:#0c5460; padding:12px; border-radius:6px; border-left:4px solid #0c5460; }
+.warning-message { background:#fff3cd; color:#856404; padding:12px; border-radius:6px; border-left:4px solid #856404; }
+/* End of src/styles/Buttons.css */

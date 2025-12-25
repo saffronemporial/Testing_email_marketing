@@ -1,0 +1,78 @@
+/* components/LandingPage/sections/Navigation.css */
+.navigation {
+  background: rgba(10, 10, 15, 0.95);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(212, 175, 55, 0.3);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo-container {
+  background: linear-gradient(135deg, #D4AF37 0%, #FFD700 50%, #FDB931 100%);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 30px rgba(212, 175, 55, 0.4);
+  animation: logoGlow 3s ease-in-out infinite alternate;
+}
+
+@keyframes logoGlow {
+  0% { box-shadow: 0 0 20px rgba(212, 175, 55, 0.4); }
+  100% { box-shadow: 0 0 40px rgba(212, 175, 55, 0.8), 0 0 60px rgba(212, 175, 55, 0.3); }
+}
+
+.nav-link {
+  position: relative;
+  color: #fff;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  padding: 8px 16px;
+  border-radius: 6px;
+}
+
+.nav-link:hover {
+  color: #FFD700;
+  background: rgba(212, 175, 55, 0.1);
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #D4AF37, #FFD700);
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.nav-link:hover::after {
+  width: 80%;
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #D4AF37 0%, #FFD700 50%, #FFFFFF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text; 
+}
+
+/* Futuristic mobile menu */
+.mobile-menu {
+  background: rgba(20, 20, 30, 0.98);
+  border: 1px solid rgba(212, 175, 55, 0.2);
+  backdrop-filter: blur(20px);
+}
+
+.mobile-nav-link {
+  color: #fff;
+  padding: 12px 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.mobile-nav-link:hover {
+  background: rgba(212, 175, 55, 0.1);
+  color: #FFD700;
+  padding-left: 30px;
+}

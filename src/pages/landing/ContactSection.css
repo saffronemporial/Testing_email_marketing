@@ -1,0 +1,129 @@
+/* src/components/Landing/ContactSection.css */
+
+.ct-wrapper {
+  padding: 3rem 1.25rem 3.5rem;
+  background: radial-gradient(circle at top, #020617 0, #020617 70%);
+}
+
+.ct-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  border-radius: 24px;
+  padding: 1.8rem 1.6rem;
+  background: radial-gradient(circle at top left, #111827, #020617);
+  border: 1px solid rgba(148, 163, 184, 0.5);
+  display: grid;
+  grid-template-columns: minmax(0, 1.6fr) minmax(0, 1.4fr);
+  gap: 1.5rem;
+}
+
+.ct-left h2 {
+  font-size: 1.9rem;
+  margin-bottom: 0.4rem;
+}
+
+.ct-left p {
+  color: #9ca3af;
+  font-size: 0.95rem;
+  margin-bottom: 0.7rem;
+}
+
+.ct-points {
+  margin: 0;
+  padding-left: 1.1rem;
+  color: #e5e7eb;
+  font-size: 0.9rem;
+}
+
+.ct-points li {
+  margin-bottom: 0.35rem;
+}
+
+/* Form */
+
+.ct-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  font-size: 0.85rem;
+}
+
+.ct-row {
+  display: flex;
+  gap: 0.6rem;
+}
+
+.ct-row label,
+.ct-full {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.ct-form input,
+.ct-form textarea {
+  border-radius: 0.75rem;
+  border: 1px solid rgba(51, 65, 85, 0.9);
+  padding: 0.55rem 0.7rem;
+  background: rgba(15, 23, 42, 0.9);
+  color: #f9fafb;
+  font-size: 0.85rem;
+}
+
+.ct-form input:focus,
+.ct-form textarea:focus {
+  outline: none;
+  border-color: #fbbf24;
+  box-shadow: 0 0 0 1px #fbbf24;
+}
+
+.ct-submit {
+  margin-top: 0.3rem;
+  align-self: flex-start;
+  padding: 0.6rem 1.2rem;
+  border-radius: 999px;
+  border: none;
+  background: linear-gradient(135deg, #ff9933, #ffd700);
+  color: #111827;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.ct-submit:disabled {
+  opacity: 0.7;
+  cursor: default;
+}
+
+.ct-status {
+  margin-top: 0.4rem;
+  font-size: 0.8rem;
+}
+
+.ct-status.success {
+  color: #22c55e;
+}
+
+.ct-status.error {
+  color: #f97316;
+}
+
+.ct-footer-note {
+  max-width: 1200px;
+  margin: 0.75rem auto 0;
+  font-size: 0.8rem;
+  color: #9ca3af;
+  text-align: center;
+}
+
+/* Responsive */
+
+@media (max-width: 960px) {
+  .ct-inner {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .ct-row {
+    flex-direction: column;
+  }
+}
